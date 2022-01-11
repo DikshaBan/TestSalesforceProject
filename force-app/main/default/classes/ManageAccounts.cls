@@ -5,7 +5,7 @@ public with sharing class ManageAccounts {
 
     public static list<Account> getAccounts() {
         
-       list<Account> accountList = [select id, name from account limit 5];
+       list<Account> accountList = [select id, name from account limit 10];
        return accountList;
     }
 }
