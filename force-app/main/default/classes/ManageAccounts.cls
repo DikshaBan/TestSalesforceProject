@@ -1,8 +1,8 @@
 public with sharing class ManageAccounts {
     
-    public static list<Account> getAccounts() {
+    public static List<Account> getAccounts() {
         
-       list<Account> accountList = [select id, name from account limit 30];
+       List<Account> accountList = [SELECT id, name FROM Aaccount limit 30];
        return accountList;
     }
 }
